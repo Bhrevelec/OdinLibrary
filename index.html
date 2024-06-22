@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="logoContainer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#E1B77E"
+        >
+          <path
+            d="M480-60q-72-68-165-104t-195-36v-440q101 0 194 36.5T480-498q73-69 166-105.5T840-640v440q-103 0-195.5 36T480-60Zm0-104q63-47 134-75t146-37v-276q-73 13-143.5 52.5T480-394q-66-66-136.5-105.5T200-552v276q75 9 146 37t134 75Zm0-436q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-760q0-33-23.5-56.5T480-840q-33 0-56.5 23.5T400-760q0 33 23.5 56.5T480-680Zm0-80Zm0 366Z"
+          />
+        </svg>
+        <p id="logo">Library online</p>
+      </div>
+      <button id="addBtn">+ Add book</button>
+    </div>
+    <dialog>
+      <p class="emphasis">Enter book details</p>
+      <form method="dialog">
+        <div class="inputContainer">
+          <label for="titleInput">Title: </label><input id="titleInput" /><br />
+        </div>
+        <div class="inputContainer">
+          <label for="authorInput">Author:</label
+          ><input id="authorInput" /><br />
+        </div>
+        <div class="inputContainer">
+          <label for="pagesInput">Pages: </label
+          ><input id="pagesInput" type="number" /><br />
+        </div>
+        <div class="inputContainer">
+          <label for="readInput">Read:</label>
+          <select id="readInput">
+            <option>Y</option>
+            <option>N</option>
+          </select>
+        </div>
+        <button id="formBtn">Add</button>
+      </form>
+    </dialog>
+    <div id="bookContainer">
+      <div class="book">
+        <div class="title emphasis">
+          Title:
+          <p>Harry Potter and the chamber of secrets</p>
+        </div>
+        <div class="author emphasis">
+          Author:
+          <p>J.K. Rowling</p>
+        </div>
+        <div class="pages emphasis">
+          Pages:
+          <p>397 pages</p>
+        </div>
+        <div class="read emphasis">
+          Read:
+          <p>Y</p>
+        </div>
+        <div class="buttonContainer">
+          <button class="removeBtn">Remove book</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
