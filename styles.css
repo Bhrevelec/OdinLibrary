@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+#banner {
+  width: 100%;
+  height: 10vh;
+  background-color: #054e5a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  margin-left: 10%;
+  margin-right: 7%;
+}
+
+#logo {
+  color: #e1b77e;
+  padding: 2%;
+  font-family: "Playwrite CO";
+}
+
+#logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 250px;
+}
+
+button {
+  background-color: #e1b77e;
+  padding: 5px 10px;
+}
+
+#addBtn {
+  margin-right: 3%;
+}
+
+#bookContainer {
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  gap: 35px;
+}
+
+.book {
+  width: 250px;
+  height: 350px;
+  border: 2px solid #a1a9b4;
+  border-radius: 5px;
+}
+
+.book .emphasis {
+  padding-left: 10px;
+}
+
+.book .title,
+.book .author,
+.book .pages,
+.book .read {
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.book > div > p {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog {
+  background-color: #ced9d7;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  left: 75vw;
+  border: 3px solid #054e5a;
+  border-top: none;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+}
+
+.inputContainer {
+  padding-top: 10px;
+}
+
+#formBtn {
+  margin-top: 20px;
+}
+
+p.emphasis {
+  font-weight: bold;
+  font-size: 20px;
+}
